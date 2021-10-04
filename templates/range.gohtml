@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{.Title}}</title>
+</head>
+<body>
+{{range $index, $element := .Skills}}
+    <h1>Your No.{{$index}} skill is {{$element}}</h1>
+{{else}}
+    <h1>You didn't input your skills yet!</h1>
+{{end}}
+</body>
+</html>

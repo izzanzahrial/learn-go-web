@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{{.Title}}</title>
+</head>
+<body>
+{{if .Name}}
+    <h1>{{.Name}}</h1>
+{{else if .Address.Street}}
+{{else}}
+    <h1>Hello</h1>
+{{end}}
+</body>
+</html>

@@ -1,0 +1,8 @@
+{{define "layout"}}
+{{/* define = change the name of the layout */}}
+{{template "header.gohtml" .}}
+{{/* The "." after gohtml is to include all the data */}}
+    <h1>Hello {{.Name}}</h1>
+{{template "footer.gohtml"}}
+{{/* end for define */}}
+{{end}}
