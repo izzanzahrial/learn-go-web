@@ -1,7 +1,7 @@
 package learn_go_web
 
 import (
-	"embed"
+	_ "embed"
 	"fmt"
 	"net/http"
 	"testing"
@@ -31,8 +31,6 @@ func TestServeFile(t *testing.T) {
 }
 
 // Serve file using golang embed
-var test embed.FS // i dont know why vs code keep removing the embed import when i use it, in line bellow
-
 //go:embed resources/index.html
 var resourceIndex string
 

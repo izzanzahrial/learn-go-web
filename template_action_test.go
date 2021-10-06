@@ -11,8 +11,8 @@ import (
 
 // Template action with if statement
 func TemplateActionIf(writer http.ResponseWriter, request *http.Request) {
-	t := template.Must(template.ParseFiles("./templates/if_else.gohtml"))
-	t.ExecuteTemplate(writer, "if_else.gohtml", map[string]interface{}{
+	t := template.Must(template.ParseFiles("./templates/if.else.gohtml"))
+	t.ExecuteTemplate(writer, "if.else.gohtml", map[string]interface{}{
 		"Title": "Template Action If Else statement",
 		"Name":  "Izzan",
 		"Address": map[string]interface{}{
